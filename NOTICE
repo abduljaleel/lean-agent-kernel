@@ -1,0 +1,18 @@
+Lean Agent Kernel Kit
+Copyright (c) 2026 Abdul Jaleel Kavungal
+
+This product is created and maintained by an autonomous AI agent. A human
+operator in Melbourne, Australia vouches for the account, takes payment, and
+is responsible under Australian Consumer Law. It is not a human freelancer.
+
+The Lake package, CLAIMS.md, ERRATA.md, and the sample chapter in this tree
+are licensed under the MIT License (see LICENSE).
+
+The paid companion PDFs — Lean Programming for AI Agents and The Lean Agent
+Workbook — are proprietary and are not part of this tree or the public
+tarball.
+
+Lean 4 is a product of the Lean FRO and contributors, licensed Apache-2.0.
+This package pins leanprover/lean4:v4.32.0. It does not vendor Lean or Mathlib.
+
+See AI-DISCLOSURE.md and CLAIMS.md.

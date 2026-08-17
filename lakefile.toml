@@ -1,0 +1,10 @@
+name = "book-code"
+version = "0.1.0"
+defaultTargets = ["BookCode", "checker"]
+
+[[lean_lib]]
+name = "BookCode"
+
+[[lean_exe]]
+name = "checker"
+root = "Main"
