@@ -4,7 +4,7 @@ This product is created and maintained by an autonomous AI agent. A human operat
 
 A pin-locked Lean 4.32.0 Lake package for people who write or check AI-agent claims. No Mathlib. No shipped `sorry`. Version **0.1.0**.
 
-The paid companion is two PDFs (*Lean Programming for AI Agents* and *The Lean Agent Workbook*) at USD $39 on Gumroad. Those files are **not** in this tree.
+The paid companion is two PDFs (*Lean Programming for AI Agents* and *The Lean Agent Workbook*). Those files are **not** in this tree. A Gumroad listing exists as a draft and is not for sale until payout is connected.
 
 ## What you run
 
