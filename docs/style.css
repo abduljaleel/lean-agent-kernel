@@ -1,0 +1,295 @@
+/* Lean Agent Kernel Kit — paper monograph. No CDNs. System fonts only. */
+
+:root {
+  --paper: #f3eee4;
+  --ink: #1c1814;
+  --muted: #5a5348;
+  --rule: #c8bfb0;
+  --rule-strong: #8a8070;
+  --code-bg: #e7e0d2;
+  --oxblood: #6b2d22;
+  --disabled: #8a8070;
+  --sheet: #faf6ee;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  font-size: 18px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Palatino, "Palatino Linotype", "Iowan Old Style", "Sitka Text", Charter, Georgia, "Times New Roman", serif;
+  line-height: 1.55;
+  text-rendering: optimizeLegibility;
+}
+
+.sheet {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2.25rem 1.35rem 4rem;
+}
+
+@media (min-width: 720px) {
+  body {
+    background:
+      linear-gradient(90deg, #e8e0d2 0, #e8e0d2 12px, transparent 12px),
+      var(--paper);
+  }
+  .sheet {
+    background: var(--sheet);
+    margin: 2rem auto 4rem;
+    padding: 3rem 3.25rem 4rem;
+    border: 1px solid var(--rule);
+    box-shadow: 0 1px 0 rgba(28, 24, 20, 0.04);
+  }
+}
+
+.masthead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--rule-strong);
+  margin-bottom: 1.5rem;
+}
+
+.wordmark {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.wordmark img {
+  display: block;
+  flex: 0 0 auto;
+}
+
+.wordmark-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+
+.wm-small {
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.wm-large {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.meta {
+  margin: 0;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+.disclosure {
+  margin: 0 0 1.75rem;
+  padding: 0.9rem 0 1rem;
+  border-bottom: 1px solid var(--rule);
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 1.45rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0 0 1rem;
+}
+
+.lede {
+  margin: 0 0 2rem;
+  color: var(--ink);
+}
+
+h2 {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--oxblood);
+  margin: 2.25rem 0 0.7rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--rule);
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+}
+
+section { margin: 0; }
+
+p, ul { margin: 0 0 0.85rem; }
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li { margin-bottom: 0.35rem; }
+
+a {
+  color: var(--oxblood);
+  text-underline-offset: 0.15em;
+}
+
+a:hover { color: var(--ink); }
+
+code, pre {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.82rem;
+}
+
+code {
+  background: var(--code-bg);
+  padding: 0.08em 0.28em;
+  border-radius: 2px;
+}
+
+pre {
+  background: var(--code-bg);
+  border: 1px solid var(--rule);
+  padding: 0.85rem 1rem;
+  overflow-x: auto;
+  margin: 0 0 1rem;
+  line-height: 1.4;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  font-size: 0.82rem;
+}
+
+.note {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.split {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .split { grid-template-columns: 1fr 1fr; }
+}
+
+.card {
+  border: 1px solid var(--rule);
+  padding: 1rem 1.05rem 0.4rem;
+  background: var(--paper);
+}
+
+.card .price {
+  margin: 0 0 0.7rem;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.78rem;
+  color: var(--oxblood);
+  letter-spacing: 0.03em;
+}
+
+.card ul { padding-left: 1.05rem; }
+
+cite { font-style: italic; }
+
+.buy {
+  margin-top: 2.5rem;
+  padding: 1.25rem 0 0.25rem;
+}
+
+.price-line {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.85rem;
+}
+
+button[disabled] {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.85rem 1rem;
+  margin: 0 0 0.75rem;
+  border: 1px dashed var(--rule-strong);
+  background: transparent;
+  color: var(--disabled);
+  font-family: inherit;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  text-align: center;
+  cursor: not-allowed;
+}
+
+.dl {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+  margin: 0.5rem 0 0.85rem;
+}
+
+.dl-link {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.dl-meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.checksum-label {
+  margin: 0 0 0.3rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.checksum {
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+
+footer {
+  margin-top: 2.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule-strong);
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+footer p { margin: 0 0 0.35rem; }
+
+@media print {
+  body, .sheet {
+    background: #fff;
+    box-shadow: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    max-width: none;
+  }
+  button { display: none; }
+  a { color: inherit; text-decoration: none; }
+}

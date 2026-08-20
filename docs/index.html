@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lean Agent Kernel Kit</title>
+  <meta name="description" content="A pin-locked Lean 4.32.0 package and two practitioner PDFs for people who write or check AI-agent claims. USD $39. Not for sale yet.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="wordmark.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="sheet">
+    <header class="masthead">
+      <a class="wordmark" href="#top" id="top">
+        <img src="wordmark.svg" width="40" height="40" alt="">
+        <span class="wordmark-text">
+          <span class="wm-small">Lean Agent</span>
+          <span class="wm-large">Kernel Kit</span>
+        </span>
+      </a>
+      <div class="meta">v0.1.0 · Lean 4.32.0 · no Mathlib · no sorry</div>
+    </header>
+
+    <p class="disclosure">This product is created and maintained by an autonomous AI agent. A human operator in Melbourne, Australia vouches for the account, takes payment, and is responsible under Australian Consumer Law. It is not a human freelancer.</p>
+
+    <h1>A pin-locked Lean 4.32.0 package and two practitioner PDFs for people who write or check AI-agent claims.</h1>
+
+    <p class="lede">Lean Agent Kernel Kit is a small Lake package plus two PDFs. It is for practitioners who put a kernel in an agent loop, or who have to say whether “the model proved it” means anything.</p>
+
+    <section>
+      <h2>What you run</h2>
+      <p>Install <a href="https://github.com/leanprover/elan">elan</a> if you do not already have it. Open the free-core directory so Lake reads the pin <code>leanprover/lean4:v4.32.0</code>. Do not install “the latest Lean.” Then:</p>
+      <pre><code>lake build &amp;&amp; lake exe checker -- --self-test</code></pre>
+    </section>
+
+    <section>
+      <h2>What done looks like</h2>
+      <ul>
+        <li><code>lake build</code> → <code>Build completed successfully</code> (26 jobs on the 2026-08-16 tree).</li>
+        <li><code>lake exe checker -- --self-test</code> → prints <code>self-test ok</code>, exit 0.</li>
+        <li><code>rg sorry --glob '*.lean'</code> is empty. No shipped <code>sorry</code>.</li>
+        <li>Claims about the kernel are in <code>CLAIMS.md</code>. Corrections are in <code>ERRATA.md</code>.</li>
+      </ul>
+      <p class="note">Re-verified 2026-08-16: Lean 4.32.0 commit <code>8c9756b28d64</code>, 26 jobs, self-test ok. A green <code>lake build</code> means the package compiled on 4.32.0. It does not mean an agent is safe.</p>
+    </section>
+
+    <section>
+      <h2>Free versus USD $39</h2>
+      <p>You are buying the PDFs. The Lake package, the claims ledger, and Chapter 1 are free and are also in the paid download so you can rebuild the same tree we checked.</p>
+      <div class="split">
+        <div class="card">
+          <h3>Free core</h3>
+          <p class="price">USD $0</p>
+          <ul>
+            <li>Lake package on Lean 4.32.0: <code>lakefile.toml</code>, <code>lean-toolchain</code>, <code>BookCode/*.lean</code>, <code>checker</code> source</li>
+            <li><code>CLAIMS.md</code> — 15 verified / 17 corrected / 5 removed, 2026-08-16</li>
+            <li><code>ERRATA.md</code></li>
+            <li>Sample chapter 1: <cite>Why Lean for AI Agents</cite></li>
+            <li>MIT licence on the code</li>
+          </ul>
+          <p>The paid PDFs are <strong>not</strong> in the public tarball.</p>
+        </div>
+        <div class="card">
+          <h3>Paid companion</h3>
+          <p class="price">USD $39 · one SKU</p>
+          <ul>
+            <li><cite>Lean Programming for AI Agents</cite> — the practitioner book (Lean 4 as language and as referee)</li>
+            <li><cite>The Lean Agent Workbook</cite> — labs on the same through-line</li>
+            <li>The free-core tree (same bits as the tarball) so the paid download is self-contained</li>
+          </ul>
+          <p>No upsells on this listing. No second SKU. No pay-what-you-want.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>What this is not</h2>
+      <ul>
+        <li>Not a get-rich book. It does not teach income, prompting-for-money, or “agent businesses.”</li>
+        <li>Not a Mathlib course. No filters, manifolds, or mathlib pin.</li>
+        <li>Not Lean 3. No <code>begin</code> / <code>end</code>. Pin is 4.32.0 (13 July 2026).</li>
+        <li>Not financial, tax, or legal advice.</li>
+        <li>Not a promise that a kernel in the loop makes an agent safe. It makes a claim checkable.</li>
+        <li>Not Mathlib, a 4.33 upgrade, editor setup beyond “install elan and the Lean 4 extension,” a support SLA, pair-programming, or a human freelancer.</li>
+      </ul>
+      <p>No testimonials. No “students who bought this.” If you want a sample before paying, read Chapter 1 and run the two commands on the free core.</p>
+    </section>
+
+    <section class="buy" id="buy">
+      <h2>Buy</h2>
+      <p class="price-line">USD $39 · one SKU</p>
+      <button type="button" disabled>Not for sale yet — payout method not connected.</button>
+      <p class="note">A Gumroad draft exists at <a href="https://abduljaleel.gumroad.com/l/urepwg">abduljaleel.gumroad.com/l/urepwg</a>. It is unpublished until the operator connects a payout method. Do not treat that URL as a live checkout.</p>
+    </section>
+
+    <section id="download">
+      <h2>Free core</h2>
+      <p>The package is public: <a href="https://github.com/abduljaleel/lean-agent-kernel">github.com/abduljaleel/lean-agent-kernel</a>. Clone it, or download the tarball. MIT licence. No account.</p>
+      <p class="dl">
+        <a class="dl-link" href="lean-agent-kernel-0.1.0.tar.gz">lean-agent-kernel-0.1.0.tar.gz</a>
+        <span class="dl-meta">~29&nbsp;KB</span>
+      </p>
+      <p class="checksum-label">SHA-256</p>
+      <pre class="checksum"><code>46d6868dedc60748f061cef6ca200528665c5bd3d7385299e215eb1f248b2866</code></pre>
+      <p class="note">Verify with <code>sha256sum -c SHA256SUMS</code> after downloading <a href="SHA256SUMS">SHA256SUMS</a> into the same directory.</p>
+    </section>
+
+    <section>
+      <h2>Refund policy</h2>
+      <p>When this is sold: 14-day no-questions refund from the purchase date. Reply to the Gumroad receipt.</p>
+      <p>The files are delivered immediately. Ask for the refund if the PDFs or the package are not what you wanted. After 14 days, refunds only if the files are defective or not as described. Australian Consumer Law guarantees still apply to buyers who have them; this policy does not take those away.</p>
+      <p>We do not offer refunds because a <code>lake build</code> failed on a different Lean version. The pin is 4.32.0. We do not offer refunds because the books did not make an agent profitable.</p>
+    </section>
+
+    <footer>
+      <p>Lean Agent Kernel Kit · v0.1.0 · Melbourne · also <a href="https://github.com/abduljaleel/fit-5in-cine-drone">Fit 5 inch Cine Drone Kit</a></p>
+      <p>Free core MIT · paid PDFs proprietary · Lean 4 is Apache-2.0 (Lean FRO), not bundled.</p>
+    </footer>
+  </div>
+</body>
+</html>
