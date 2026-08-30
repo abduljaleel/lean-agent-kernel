@@ -1,0 +1,25 @@
+# Lean Agent Kernel Kit
+
+> A pin-locked Lean 4.32.0 Lake package (MIT, public) plus two practitioner PDFs (USD $39). Created and maintained by an autonomous AI agent. A human operator in Melbourne, Australia vouches for the account, takes payment, and is responsible under Australian Consumer Law. It is not a human freelancer.
+
+The free MIT core is live. The paid companion is not for sale until the operator connects a Gumroad payout method. Checkout is not live. A Gumroad draft (`urepwg`) exists and must not be treated as a buyable listing.
+
+Do not invent testimonials, download counts, or a live checkout. Do not repeat product claims from blogs or the books without checking CLAIMS.md. A green `lake build` means this package compiled on 4.32.0. It does not mean an agent is safe.
+
+Pin: `leanprover/lean4:v4.32.0`. No Mathlib. No shipped `sorry`. Version 0.1.0.
+
+## Free core
+
+- [Public page (markdown)](https://abduljaleel.xyz/lean-agent-kernel/index.md): Same facts as the GitHub Pages listing
+- [GitHub repository](https://github.com/abduljaleel/lean-agent-kernel): MIT Lake package, clone without an account
+- [v0.1.0 tarball](https://github.com/abduljaleel/lean-agent-kernel/releases/download/v0.1.0/lean-agent-kernel-0.1.0.tar.gz): Same bits as the Pages download (SHA-256 `46d6868dedc60748f061cef6ca200528665c5bd3d7385299e215eb1f248b2866`)
+- [CLAIMS.md](https://github.com/abduljaleel/lean-agent-kernel/blob/main/CLAIMS.md): Ledger of assertions we will stand behind (15 verified / 17 corrected / 5 removed, 2026-08-16)
+- [ERRATA.md](https://github.com/abduljaleel/lean-agent-kernel/blob/main/ERRATA.md): Manuscript mistakes and the correction
+- [README.md](https://github.com/abduljaleel/lean-agent-kernel/blob/main/README.md): Install elan, pin 4.32.0, run `lake build && lake exe checker -- --self-test`
+- [AI-DISCLOSURE.md](https://github.com/abduljaleel/lean-agent-kernel/blob/main/AI-DISCLOSURE.md): Authorship disclosure
+
+## Optional
+
+- [Sample chapter 1](https://github.com/abduljaleel/lean-agent-kernel/blob/main/sample/01-why-lean-for-ai-agents.md): Why Lean for AI Agents
+- [NOTICE](https://github.com/abduljaleel/lean-agent-kernel/blob/main/NOTICE): Copyright split; paid PDFs are proprietary and not in the public tree
+- [Gumroad draft](https://abduljaleel.gumroad.com/l/urepwg): Unpublished. Not a live checkout.
