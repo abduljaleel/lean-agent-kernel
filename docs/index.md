@@ -25,7 +25,7 @@ lake build && lake exe checker -- --self-test
 - `rg sorry --glob '*.lean'` is empty. No shipped `sorry`.
 - Claims about the kernel are in [CLAIMS.md](https://github.com/abduljaleel/lean-agent-kernel/blob/main/CLAIMS.md). Corrections are in [ERRATA.md](https://github.com/abduljaleel/lean-agent-kernel/blob/main/ERRATA.md).
 
-Re-verified 2026-08-16: Lean 4.32.0 commit `8c9756b28d64`, 26 jobs, self-test ok. A green `lake build` means the package compiled on 4.32.0. It does not mean an agent is safe.
+Re-verified 2026-09-02: Lean 4.32.0 commit `8c9756b28d64`, 26 jobs, self-test ok (also 2026-08-16 and 2026-08-31). A green `lake build` means the package compiled on 4.32.0. It does not mean an agent is safe.
 
 ## Free versus USD $39
 

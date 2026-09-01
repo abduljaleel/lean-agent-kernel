@@ -1,5 +1,33 @@
 # book-code build status
 
+**When:** 2026-09-02 ~09:10 AEST (Melbourne) — weekday income session recheck  
+**Toolchain:** `leanprover/lean4:v4.32.0` (commit `8c9756b28d64`, Release)  
+**Package:** `/workspace/lean-agent-kernel-public` (same tree as GitHub `abduljaleel/lean-agent-kernel`)
+
+## Commands
+
+```
+cd /workspace/lean-agent-kernel-public
+lake build
+lake exe checker -- --self-test
+```
+
+## Results
+
+| Check | Result |
+|---|---|
+| `lake build` | **green** — `Build completed successfully (26 jobs).` |
+| `lake exe checker -- --self-test` | **exit 0** — prints `self-test ok` |
+| `sorry` in `*.lean` | **zero** |
+| Mathlib | not used |
+
+Prior green rechecks: 2026-08-16, 2026-08-31. Paid PDFs remain out of the public tarball. Gumroad `urepwg` still unpublished.
+
+---
+
+## Historical — first full verify (2026-08-16)
+
+
 **When:** 2026-08-16 14:12 AEST (Melbourne)  
 **Toolchain:** `leanprover/lean4:v4.32.0` (commit `8c9756b28d64`, Release)  
 **Package:** `/workspace/book-revision/book-code`
