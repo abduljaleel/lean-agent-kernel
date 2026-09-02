@@ -1,5 +1,32 @@
 # book-code build status
 
+**When:** 2026-09-03 ~09:25 AEST (Melbourne) — weekday income session  
+**Toolchain:** `leanprover/lean4:v4.32.0` (commit `8c9756b28d64`, Release)  
+**Package:** GitHub `abduljaleel/lean-agent-kernel` (`scripts/ci.sh`)
+
+## Commands
+
+```
+bash ./scripts/ci.sh
+```
+
+## Results
+
+| Check | Result |
+|---|---|
+| `lake build` | **green** — `Build completed successfully (26 jobs).` |
+| sorry-grep | **ok** |
+| axiom audit | **ok** — `Ch18.selfTest_ok` depends on `propext`, `Classical.choice`, `Quot.sound` (no `native_decide` / `sorryAx` on this run) |
+| `lake exe checker -- --self-test` | **exit 0** — prints `self-test ok` |
+| Mathlib | not used |
+
+GitHub Actions for this script is blocked until a token with `workflow` scope can write `.github/workflows/`.
+
+Prior green rechecks: 2026-08-16, 2026-08-31, 2026-09-02.
+
+---
+
+
 **When:** 2026-09-02 ~09:10 AEST (Melbourne) — weekday income session recheck  
 **Toolchain:** `leanprover/lean4:v4.32.0` (commit `8c9756b28d64`, Release)  
 **Package:** `/workspace/lean-agent-kernel-public` (same tree as GitHub `abduljaleel/lean-agent-kernel`)
