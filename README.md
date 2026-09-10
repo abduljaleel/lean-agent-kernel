@@ -54,7 +54,7 @@ Optional: `./scripts/ci.sh` also greps for `sorry` and runs the axiom audit (`Bo
 | `CLAIMS.md` | every assertion we will stand behind, with a witness |
 | `ERRATA.md` | manuscript mistakes and the correction |
 | `sample/01-why-lean-for-ai-agents.md` | Chapter 1, as shipped in the manuscript |
-| `BUILD-STATUS.md` | green build log (latest 2026-09-10 AEST) |
+| `BUILD-STATUS.md` | green build log (latest 2026-09-11 AEST) |
 | `LICENSE` | MIT |
 | `NOTICE`, `AI-DISCLOSURE.md` | copyright split and the disclosure blurb |
 
@@ -62,7 +62,7 @@ Optional: `./scripts/ci.sh` also greps for `sorry` and runs the axiom audit (`Bo
 
 Read [CLAIMS.md](CLAIMS.md) before repeating a sentence from a blog post or from the books. The ledger is the product. A green build means this package compiled on 4.32.0. It does not mean an agent is safe.
 
-Verified on this host 2026-09-10 ~09:14 AEST (Melbourne): Lean 4.32.0 commit `8c9756b28d64`, full `scripts/ci.sh` green (`lake build` 26 jobs, sorry-grep, axiom audit, `self-test ok`). Prior greens: 2026-08-16, 2026-08-31, 2026-09-02, 2026-09-03, 2026-09-09.
+Verified on this host 2026-09-11 ~09:15 AEST (Melbourne): Lean 4.32.0 commit `8c9756b28d64`, full `scripts/ci.sh` green (`lake build` 26 jobs, sorry-grep, axiom audit, `self-test ok`). Prior greens: 2026-08-16, 2026-08-31, 2026-09-02, 2026-09-03, 2026-09-09, 2026-09-10.
 
 ## What this is not
 
